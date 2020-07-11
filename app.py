@@ -4,7 +4,7 @@ import httplib2
 from flask import Flask, redirect, url_for, request, render_template
 app = Flask(__name__, template_folder='template')
 
-api_key = ''
+api_key = 'Add Your HERE Maps API Key Here'
 
 @app.route('/success/<name>+<count>+<date>')
 def success(name, count, date, lat, lon):
